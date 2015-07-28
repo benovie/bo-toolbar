@@ -1,0 +1,25 @@
+<script src="../angular-material/angular-material.min.js"></script>
+<link rel="stylesheet" href="../angular-material/angular-material.css">
+<style>
+md-toolbar.toolbar{
+	-webkit-box-shadow: 0 4px 4px -2px rgba(0,0,0,0.4);
+   -moz-box-shadow: 0 4px 4px -2px rgba(0,0,0,0.4);
+	box-shadow: 0 4px 4px -2px rgba(0,0,0,0.4);
+}
+</style>
+<script>
+	angular.module('bo.toolbar',['ngMaterial']);
+	angular.module('bo.toolbar').directive('bo-toolbar', function() {
+		return {
+			restrict : 'E',
+			scope: {
+				title : '@'
+			},
+			template : '<md-toolbar class="toolbar">'+
+				'<h2 class="md-toolbar-tools">'+
+					'<span>{{title}}</span>'+
+				'</h2>'+
+			'</md-toolbar>'
+		}
+	});
+</script>

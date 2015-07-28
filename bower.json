@@ -1,0 +1,11 @@
+{
+  "name": "bo-toolbar",
+  "version": "0.0.1",
+  "ignore": [],
+  "dependencies": {
+    "angular-material": "~0.10.0"
+  },
+  "main": [
+    "toolbar.html"
+  ]
+}
